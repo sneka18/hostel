@@ -1,0 +1,116 @@
+/* === General Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === Background Styling === */
+body {
+  background: linear-gradient(to right, #ffe0c3, #ffb0c1);
+  min-height: 100vh;
+  color: #000; /* Change to black for better readability */
+}
+
+/* === Glassmorphism Container === */
+.glass-bg {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* === Stylish Buttons === */
+.btn-dark {
+  background: #2d2d2d;
+  border: none;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.btn-dark:hover {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  transform: scale(1.05);
+  color: white;
+}
+
+/* === Card Style for Student/Admin Cards === */
+.student-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* === Modal Customization === */
+.modal-content {
+  background: rgba(30, 30, 30, 0.95);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: none;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+/* === Sidebar Style === */
+.sidebar {
+  background-color: #111;
+  color: #fff;
+  height: 100vh;
+  padding: 1rem;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* === Admin Title / Branding === */
+.admin-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* === Utility Classes === */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.rounded-xl {
+  border-radius: 1.5rem !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* === Animations === */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

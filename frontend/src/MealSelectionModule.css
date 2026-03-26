@@ -1,0 +1,134 @@
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    font-family: 'Poppins', sans-serif; /* Font for better readability */
+    margin: 0;
+    padding: 0;
+  }
+  /* Apply Poppins font to the entire body */
+body {
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  }
+  
+  
+  /* Meal Container Styling */
+  .meal-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background: #fff5eb;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in;
+    background-image: url('https://www.example.com/food-background.jpg'); /* Optional: Add a background image related to food */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Animated Heading */
+  .animated-heading {
+    font-size: 2.5rem;
+    color: #e65100;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    animation: bounce 1s ease infinite alternate;
+  }
+  
+  /* Meal Card Styling */
+  .meal-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: linear-gradient(to bottom right, #fff3e0, #ffe0b2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 1.5rem;
+  }
+  
+  .meal-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Meal Item Styling */
+  .meal-item {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: rgba(255, 235, 205, 0.6);
+    border-radius: 10px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .meal-item:hover {
+    background: #ffd180;
+  }
+  
+  /* Add meal item icons */
+  .meal-item:before {
+    content: url('https://img.icons8.com/ios/50/000000/meal.png'); /* Add icon for meal */
+    margin-right: 10px;
+  }
+  
+  /* Meal Item Label */
+  .meal-item strong {
+    color: #d84315;
+    margin-right: 0.5rem;
+  }
+  
+  /* Meal Rate Styling */
+  .meal-rate {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #6d4c41;
+  }
+  
+  /* Loader and Error Styling */
+  .meal-loader,
+  .meal-error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #bf360c;
+    background: #ffe0b2;
+    border-radius: 10px;
+    animation: pulse 1s infinite;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #ffe0b2;
+    }
+    50% {
+      background-color: #ffcc80;
+    }
+    100% {
+      background-color: #ffe0b2;
+    }
+  }
+  
